@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    ["transform-runtime", {
+      "helpers": false, // defaults to true
+      "polyfill": false, // defaults to true
+      "regenerator": true, // defaults to true
+      "moduleName": "babel-runtime" // defaults to "babel-runtime"
+    }],
+    ["syntax-dynamic-import"],
+    ["dynamic-import-node"],
+    ["dynamic-import-webpack"],
+    ["transform-object-rest-spread", {
+      "useBuiltIns": true }
+    ]
+  ]
+}
